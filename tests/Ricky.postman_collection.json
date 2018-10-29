@@ -1,0 +1,108 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Ricky",
+		"_postman_id": "2f000cec-5884-46d4-dd20-7b9d9188e6e3",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://192.168.7.110:9000/api/v1/login",
+			"request": {
+				"url": "http://192.168.7.110:9000/api/v1/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": "C"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Cache-Control",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"admin\",\n\"password\":\"password123!\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.7.110:9000/api/v1/services?limit=20&offset=3",
+			"request": {
+				"url": {
+					"raw": "http://192.168.7.110:9000/api/v1/services?limit=20&offset=3",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"7",
+						"110"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"services"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "20",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "offset",
+							"value": "3",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": "C"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Cache-Control",
+						"value": "",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOiIxODg1ZTAyMC01MGUxLTExZTctYjRiNC1lNTQ1NTk0NTZmMDIiLCJ1c2VyTmFtZSI6ImFkbWluIiwiY29tbW9uIjp7InRva2VuVHlwZSI6IkFUIiwiaXNzdWVyIjoiYW5vbnltb3VzIiwiaXNzdWVkQXQiOjE1Mzk5MzQzMjMzMzYsImV4cGlyYXRpb24iOjE1Mzk5MzYxMjMzMzZ9fQ.g1eTXtkLSI-xI1W_lbVDmskBiG_VQ_X9IoT3uxumga9aboX3hFOkFKlc-pIBzHfH6Fa7NZ1z0p5A2_WA9dLp6Q",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"admin\",\n\"password\":\"password123!\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

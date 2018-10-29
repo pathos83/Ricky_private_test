@@ -1,0 +1,13 @@
+{
+  "name": "ricky",
+  "version": "1.0.0",
+  "description": "hehehe",
+  "scripts": {
+    "api-test-production": "newman run tests/Ricky.postman_collection.json"
+  },
+  "author": "Ricky",
+  "license": "ISC",
+  "dependencies": {
+    "newman": "^4.1.0"
+  }
+}
